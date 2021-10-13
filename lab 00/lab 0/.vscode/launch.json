@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestGUI",
+            "request": "launch",
+            "mainClass": "TestGUI",
+            "projectName": "lab 0_de1265cc"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestAirline",
+            "request": "launch",
+            "mainClass": "TestAirline",
+            "projectName": "lab 0_de1265cc"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "lab 0_de1265cc"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloWord",
+            "request": "launch",
+            "mainClass": "HelloWord",
+            "projectName": "lab 0_de1265cc"
+        }
+    ]
+}
