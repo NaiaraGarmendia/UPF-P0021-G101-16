@@ -1,0 +1,19 @@
+Grade for Lab1. 
+ 
+Max grade: 10pt 
+If the code does not compile or has been delivered after the deadline we subtract several points
+
+Total grade: 9.0
+
+Report(1pt): 0.8
+
+Classes(3pt): 2
+
+Attributes(2pt): 1.8
+
+Constructor(1pt): 1
+
+Methods(3pt): 2.4
+
+Scope(1pt): 1
+
