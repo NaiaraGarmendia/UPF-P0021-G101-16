@@ -1,13 +1,9 @@
 package P4CODE;
 
-import java.awt.Color;
-	import java.util.LinkedList;
+import java.util.LinkedList;
 	
 
 	public class MyTestMain {
-	
-
-	    private static final Color Color = null;
 	
 
 	    public static void main(String[] args) {
@@ -18,14 +14,14 @@ import java.awt.Color;
 	    int r1 = 150;
 	    int r2 = 50;
 	
-	    EllipsoidalRegion e = new EllipsoidalRegion(center1, r1, r2, Color.BLUE, Color.GREEN);
+	    EllipsoidalRegion e = new EllipsoidalRegion(center1, r1, r2, java.awt.Color.BLUE, java.awt.Color.GREEN);
 	
 
 	    
 	    System.out.println("The area of the ellipse is " + e.getArea() );
 	
 
-	    System.out.println("The point (" + center1.getX() +", "+ center1.getY() + ") is in ellipse? " + e.isPointInside(center1) );
+	    System.out.println("Is the point (" + center1.getX() +", "+ center1.getY() + ") in the ellipse? " + e.isPointInside(center1) );
 	
 
 	    draw.addDrawable(e);
@@ -34,10 +30,10 @@ import java.awt.Color;
 
 	    MyPoint center2 = new MyPoint (250, 250);
 	    int r = 100;
-	    CircularRegion c = new CircularRegion(center2, r, Color.BLUE, Color.GREEN);
+	    CircularRegion c = new CircularRegion(center2, r, java.awt.Color.BLACK, java.awt.Color.YELLOW);
 	    draw.addDrawable(c);
 	    System.out.println("The area of the circle is " + c.getArea() );
-	    System.out.println("The point (" + center2.getX() +", "+ center2.getY() + ") is in cicular region? " + c.isPointInside(center2) );
+	    System.out.println("Is the point (" + center2.getX() +", "+ center2.getY() + ") in the cicular region? " + c.isPointInside(center2) );
 	
 
 	   
@@ -50,13 +46,13 @@ import java.awt.Color;
 	        points.add( new MyPoint( 10, 200 ) );
 	
 
-	    MyRegion region1 = new MyPolygon(Color.BLACK, Color.BLUE, points);
+	    MyRegion region1 = new MyPolygon(java.awt.Color.BLACK, java.awt.Color.BLUE, points);
 	    draw.addDrawable(region1);
 	    MyPoint point1 = new MyPoint( 10, 100 );
 	
 
 	    System.out.println("The area of the PolygonalRegion is " + region1.getArea() );
-	    System.out.println("The point (" + point1.getX() +", " + point1.getY() + ") is inside the Polygonal Region? " + region1.isPointInside(point1) );
+	    System.out.println("Is the point (" + point1.getX() +", " + point1.getY() + ") inside the Polygonal Region? " + region1.isPointInside(point1) );
 	
 
 	
@@ -70,12 +66,12 @@ import java.awt.Color;
 	    MyPoint p1 = new MyPoint( 5, 50 );
 	    MyPoint p2 = new MyPoint( 5, 50 );
 	    MyPoint p3 = new MyPoint( 5, 50 );
-	    MyRegion region2 = new TriangularRegion(Color.BLACK, Color.PINK, p1, p2, p3);
+	    MyRegion region2 = new TriangularRegion(java.awt.Color.BLACK, java.awt.Color.BLUE, p1, p2, p3);
 	    draw.addDrawable(region2);
 	
 
 	    System.out.println("The area of the Triangular Region is " + region2.getArea() );
-	    System.out.println("The point " + p1.getX() +", " + point1.getY() + " ) is inside the Triangular Region? " + region2.isPointInside(p1) );
+	    System.out.println("Is the point (" + p1.getX() +", " + point1.getY() + " ) inside the Triangular Region? " + region2.isPointInside(p1) );
 	
 
     }
