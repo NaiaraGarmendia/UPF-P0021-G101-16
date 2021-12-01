@@ -48,11 +48,7 @@ public class EllipsoidalRegion extends MyRegion {
 
     @Override
     public void translate(int dx, int dy) {
-       int sx = c.getX();
-       int sy = c.getY();
-       sx = sx + dx;
-       sy = sy + dy;
-       c.setX(sx);
-       c.setY(sy);
+       
+       c.translate(dx, dy);
     }    
 }

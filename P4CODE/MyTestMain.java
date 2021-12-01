@@ -46,7 +46,7 @@ import java.util.LinkedList;
 	        points.add( new MyPoint( 10, 200 ) );
 	
 
-	    MyRegion region1 = new MyPolygon(java.awt.Color.BLACK, java.awt.Color.BLUE, points);
+	    MyRegion region1 = new MyPolygon(java.awt.Color.BLACK, java.awt.Color.CYAN, points);
 	    draw.addDrawable(region1);
 	    MyPoint point1 = new MyPoint( 10, 100 );
 	
@@ -63,9 +63,9 @@ import java.util.LinkedList;
 	        points1.add( new MyPoint( 100, 90 ) );
 	
 
-	    MyPoint p1 = new MyPoint( 5, 50 );
-	    MyPoint p2 = new MyPoint( 5, 50 );
-	    MyPoint p3 = new MyPoint( 5, 50 );
+	    MyPoint p1 = new MyPoint( 20, 110 );
+	    MyPoint p2 = new MyPoint( 40, 210 );
+	    MyPoint p3 = new MyPoint( 150, 30 );
 	    MyRegion region2 = new TriangularRegion(java.awt.Color.BLACK, java.awt.Color.BLUE, p1, p2, p3);
 	    draw.addDrawable(region2);
 	
