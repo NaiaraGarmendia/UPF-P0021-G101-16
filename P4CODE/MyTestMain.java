@@ -5,8 +5,7 @@ import java.util.LinkedList;
 
 	public class MyTestMain {
 	
-
-	    public static void main(String[] args) {
+        public static void main(String[] args) {
 	    
 	    EntityDrawer draw = new EntityDrawer();
 	    
@@ -46,7 +45,7 @@ import java.util.LinkedList;
 	        points.add( new MyPoint( 10, 200 ) );
 	
 
-	    MyRegion region1 = new MyPolygon(java.awt.Color.BLACK, java.awt.Color.CYAN, points);
+	    MyRegion region1 = new MyPolygon(java.awt.Color.PINK, java.awt.Color.CYAN, points);
 	    draw.addDrawable(region1);
 	    MyPoint point1 = new MyPoint( 10, 100 );
 	
@@ -55,25 +54,28 @@ import java.util.LinkedList;
 	    System.out.println("Is the point (" + point1.getX() +", " + point1.getY() + ") inside the Polygonal Region? " + region1.isPointInside(point1) );
 	
 
-	
-
-	    LinkedList< MyPoint > points1 = new LinkedList< MyPoint >();
-	        points1.add( new MyPoint( 10, 100 ) );
-	        points1.add( new MyPoint( 150, 35) );
-	        points1.add( new MyPoint( 100, 90 ) );
-	
-
 	    MyPoint p1 = new MyPoint( 20, 110 );
 	    MyPoint p2 = new MyPoint( 40, 210 );
 	    MyPoint p3 = new MyPoint( 150, 30 );
-	    MyRegion region2 = new TriangularRegion(java.awt.Color.BLACK, java.awt.Color.BLUE, p1, p2, p3);
+	    MyRegion region2 = new TriangularRegion(java.awt.Color.RED, java.awt.Color.BLUE, p1, p2, p3);
 	    draw.addDrawable(region2);
 	
 
 	    System.out.println("The area of the Triangular Region is " + region2.getArea() );
 	    System.out.println("Is the point (" + p1.getX() +", " + point1.getY() + " ) inside the Triangular Region? " + region2.isPointInside(p1) );
 	
+    MyPoint p01 = new MyPoint( 400, 300 );
+    MyPoint p02 = new MyPoint( 270, 300);
+    MyPoint p03 = new MyPoint( 270, 270 );
+    MyPoint p04 = new MyPoint( 400, 270 );
 
+    MyRegion R2 = new RectangularRegion(java.awt.Color.CYAN, java.awt.Color.BLUE, p01, p02, p03, p04);
+    draw.addDrawable(R2);
+    
+    MyPoint f_point = new MyPoint( -4, -2 );
+
+    System.out.println("The area of the Rectangular Region is " + R2.getArea() );
+    System.out.println("The point (-4, -2 ) is inside the Rectangular Region?"  + R2.isPointInside(f_point) );
     }
 }
 	

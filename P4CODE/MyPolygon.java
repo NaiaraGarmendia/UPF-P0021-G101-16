@@ -35,6 +35,10 @@ public class MyPolygon extends MyRegion{
             yPoints[i] = (int) points.get(i).getY();
         }
         g.drawPolygon(xPoints, yPoints, nPoints);
+        g.setColor(fillColor);
+        g.setColor(lineColor);
+        g.fillPolygon(xPoints,yPoints,nPoints);
+
     }
 
 
